@@ -7,7 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="tetris_canvas"> </canvas>
+    
+    <div class="main-contenair">
+        <div class="game-title">
+            <h1>Tetris</h1>
+        </div>
+        <div class="game-concepteurs">
+            <h1>Game Concepteurs</h1>
+            <p><a href="https://www.linkedin.com/in/sainthm">Saint Heraud MBOUMA <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Saint Heraud MBOUMA"> </span> </a> </p>
+            <p><a href="https://www.linkedin.com/in/oussamabaghdadi">Oussama Baghdadi <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Oussama Baghdadi"> </span> </a></p>
+            <p><a href="https://www.linkedin.com/in/achrafboukili">Achraf Boukili <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Achraf Boukili"> </span> </a></p> 
+        </div>
+
+        <div class="help-contenair">
+            <h1>Help</h1>
+            <p>Left Arrow - Move Left</p>
+            <p>Right Arrow - Move Right</p>
+            <p>Down Arrow - Move Down</p>
+            <p>Up Arrow - Rotate</p>
+            <p>Space - Pause</p>
+        </div>
+
+        <div class="game-contenair">
+            <canvas id="tetris"></canvas>
+        </div>
+
+        <div class="score-contenair">
+            <div id="score">0</div>
+            <div class="next-piece">
+                <canvas id="next-piece" width="100" height="100"></canvas>
+            </div>
+            <button id="start-button">Start</button>
+        </div>  
+    </div>
+
 
     <script src="tetris.js"></script>
 </body>
