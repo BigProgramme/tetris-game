@@ -1,13 +1,49 @@
-.concepteur-image img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
+/* Modification du style de tetris*/ 
 #tetris{
     border: 2px solid #201818;
     background-color: #201818;
     width: 310px;
     height: 600px;
+}
+/* Modification du style de titre*/ 
+.game-title h1, .game-concepteurs h1{
+    font-size: 23px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 20px;    
+}
+
+/*Modification du style de la div des concepteurs*/
+.game-concepteurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-concepteurs div {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.game-concepteurs p {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.game-concepteurs a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.concepteur-image img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
