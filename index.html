@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tetris-game</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- lien vers Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -14,35 +17,45 @@
             <h1>Tetris</h1>
         </div>
         <div class="game-concepteurs">
-            <h1>Game Concepteurs</h1>
+            <!--<h1>Game Concepteurs</h1>-->
             <div>
-                <p><a href="https://www.linkedin.com/in/sainthm">Saint Heraud MBOUMA <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Saint Heraud MBOUMA"> </span></a></p>
-                <p><a href="https://www.linkedin.com/in/oussamabaghdadi">Oussama Baghdadi <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Oussama Baghdadi"> </span></a></p>
-                <p><a href="https://www.linkedin.com/in/achrafboukili">Achraf Boukili <span class="concepteur-image"><img src="/assets/images/mood.png" alt="Achraf Boukili"> </span></a></p>
+                <p><a href="https://www.linkedin.com/in/sainthm">Saint Heraud MBOUMA <span class="concepteur-image"><img src="/assets/images/me.png" alt="Saint Heraud MBOUMA"> </span></a></p>
+                <p><a href="https://www.linkedin.com/in/oussamabaghdadi">Oussama Baghdadi <span class="concepteur-image"><img src="/assets/images/oussama.jpg" alt="Oussama Baghdadi"> </span></a></p>
+                <p><a href="https://www.linkedin.com/in/achrafboukili">Achraf Boukili <span class="concepteur-image"><img src="/assets/images/achraf.jpg" alt="Achraf Boukili"> </span></a></p>
             </div>
         </div>
 
-        <div class="help-contenair">
-            <h1>Help</h1>
-            <p>Left Arrow - Move Left</p>
-            <p>Right Arrow - Move Right</p>
-            <p>Down Arrow - Move Down</p>
-            <p>Up Arrow - Rotate</p>
-            <p>Space - Pause</p>
-        </div>
+        <div class="main-game-contenair">
 
-        <div class="game-contenair">
-            <canvas id="tetris"></canvas>
-        </div>
-
-        <div class="score-contenair">
-            <div id="score">0</div>
-            <div class="next-piece">
-                <canvas id="next-piece" width="100" height="100"></canvas>
+            <div class="help-contenair">
+                <h1>Control Help<i class="fa fa-arrows-alt"></i></h1>
+                <p><i class="fa fa-arrow-left"></i>Left Arrow - <strong>Move Left</strong></p>
+                <p><i class="fa fa-arrow-right"></i>Right Arrow - <strong>Move Right</strong></p>
+                <p><i class="fa fa-arrow-down"></i>Down Arrow - <strong>Move Down</strong></p>
+                <p><i class="fa fa-arrow-up"></i>Up Arrow - <strong>Rotate</strong></p>
+                <p><i class="fa fa-space-shuttle"></i>Space - <strong>Pause</strong></p>
             </div>
-            <button id="start-button">Start</button>
-        </div>  
-    </div>
+    
+            <div class="game-contenair">
+                <canvas id="tetris"></canvas>
+            </div>
+    
+            <div class="score-contenair">
+                <h3>Your Score </h3>
+                <div id="score">0</div>
+                <div class="next-piece">
+                    <h3>Next Piece</h3>
+                    <canvas id="next-piece" width="100" height="100"></canvas>
+                </div>
+                <button id="start-button">Start</button>
+            </div>  
+        </div>
+
+        </div>
+        
+        <!--<footer>
+            <p>Made with <i class="fa fa-heart"></i> by Saint Heraud MBOUMA, Oussama Baghdadi, and Achraf Boukili</p>
+        </footer>-->
 
     <script src="tetris.js"></script>
 </body>
