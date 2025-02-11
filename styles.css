@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #F4F4F4;
     color: #333;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
     font-size: 23px;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    margin: 10px;    
+    margin: 15px;    
 }
 .game-title h1{
     text-transform: uppercase;
@@ -50,7 +50,7 @@ body {
     display: flex ;
     align-items: center;
     justify-content: center;
-    background-color: rgb(93, 132, 119);
+    background-color: #d0d0d0(93, 132, 119);
     padding: 15px;
     border-radius: 5px; 
      
@@ -97,14 +97,14 @@ body {
     width: 20%;
     align-items: center;
     text-align: center;
-    background-color: rgb(119, 173, 155);
+    background-color: #2C3E50(119, 173, 155);
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     
 }
 .help-contenair:hover{
-    background-color: rgb(119, 173, 155, 0.5);
+    background-color: #2C3E50(119, 173, 155, 0.5);
     transition: all 0.5s;
 }
 .fa {
@@ -141,7 +141,7 @@ body {
 }
 .level{
     width: 150px;
-    background-color: #919779;
+    background-color: #16A085;
     text-align: center;
     align-items: center;
     margin: 5px auto;
@@ -152,7 +152,7 @@ body {
 
 #score{
     width: 150px;
-    background-color: #919779;
+    background-color: #16A085;
     text-align: center;
     align-items: center;
     margin: 5px auto;
@@ -174,9 +174,11 @@ body {
 
 /*stylisation du bouton start*/
 #start-button {
+    font-family: 'Courier New', Courier, monospace, uppercase;
+    font-weight: 800;
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: #3687c8;
+    background-color: #2980B9;
     color: white;
     border: none;
     border-radius: 5px;
