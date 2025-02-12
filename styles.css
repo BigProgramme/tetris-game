@@ -1,9 +1,205 @@
-canvas {
-    display: block;
-    width: 310px;
-    height: 610px;
-    margin: 200px auto;
-    background-color: #128ada;
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* organisation du container pour organiser les éléments */
+.main-contenair{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Modification du style de titre*/ 
+.game-title h1, .game-concepteurs h1{
+    font-size: 23px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 10px;    
+}
+.game-title h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/*Modification du style de la div des concepteurs*/
+.game-concepteurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-concepteurs div {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.game-concepteurs p {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(93, 132, 119);
+    padding: 15px;
+    border-radius: 5px; 
+     
+} 
+.game-concepteurs p:hover{
+    background-color: rgb(93, 132, 119, 0.5);
+    transition: all 0.5s;
+}
+
+.game-concepteurs a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.game-concepteurs a:hover{
+    text-decoration: underline;
+}
+
+.concepteur-image img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*J'avais ajouté un contenair principal du jeu, on va organiser ses éléments*/
+.main-game-contenair{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(232, 227, 227);
+    border-radius: 5px;
+    
+}
+
+/*style de la section help*/
+.help-contenair{
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(119, 173, 155);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.help-contenair:hover{
+    background-color: rgb(119, 173, 155, 0.5);
+    transition: all 0.5s;
+}
+.fa {
+    font-size: 20px;
+    margin: 10px 5px;
+}
+
+
+/*style de la zone du canvas*/
+.game-contenair{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    /* background-color: rgb(235, 235, 248); */
+    
+}
+
+#tetris {
+    background-color: rgb(16, 16, 25); 
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
             
 }
-  
+
+/*style de la section des scores*/
+.score-contenair {
+    width: 20%;
+    text-align: center;
+}
+.score-contenair h3{
+    font-size: 20px;
+    margin: 0px;
+}
+.level{
+    width: 150px;
+    background-color: #919779;
+    text-align: center;
+    align-items: center;
+    margin: 5px auto;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#score{
+    width: 150px;
+    background-color: #919779;
+    text-align: center;
+    align-items: center;
+    margin: 5px auto;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+
+/*style de la section next piece*/
+#next-piece {
+    background-color: rgb(19, 19, 31); 
+    width: 150px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/*stylisation du bouton start*/
+#start-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #3687c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#start-button:hover {
+    background-color: #7ca9cd;
+}
+
+/* 
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+footer a {
+    color: #3687c8;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+} */
