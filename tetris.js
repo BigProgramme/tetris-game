@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Définition de toutes les pièces du jeu avec leur forme et leur couleur
 //definition of the shapes of Tetris blocks (tetrominos) and their colors.
     // Each shape is represented by a 2D array where 1 represents a block and 0 represents an empty space.
@@ -316,4 +314,3 @@ function startGame() {
     drawNextPiece();
 }
 
->>>>>>> a666bf770c417bd10758c81e31e7e6bacb1e7fb5
