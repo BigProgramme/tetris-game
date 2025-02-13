@@ -178,7 +178,7 @@ function checkLines() {
 // Gestion de la fin de partie
 function gameOver() {
     clearInterval(gameLoop); // stop  le jeu
-    alert(Game Over! Score: ${score}); // on affiche le score final
+    alert("Game Over! Score:"+score) //  affiche le score final
 }
 
 // il faut mettre à jour le jeu à chaque frame
@@ -215,6 +215,7 @@ function handleKeyPress(e) {
     }
     
     // ON Vérifie si le jeu est en pause ou non démarré, puis on ne fait rien
+// sourcery skip: use-braces
     if (!currentPiece || (isPaused && e.key !== ' ')) return;
     
     // 
