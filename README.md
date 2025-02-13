@@ -29,4 +29,4 @@ Implémentation d'un jeu Tetris classique en JavaScript utilisant le Canvas HTML
 ## 🛠 Installation et exécution
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/votre-repo/tetris-game.git
+git clone https://github.com/BigProgramme/tetris-game
