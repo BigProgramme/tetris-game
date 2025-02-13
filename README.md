@@ -27,6 +27,6 @@ Implémentation d'un jeu Tetris classique en JavaScript utilisant le Canvas HTML
 - ⏱ Augmentation de la vitesse par niveau
 
 ## 🛠 Installation et exécution
-1. Cloner le dépôt :
-```bash
-git clone https://github.com/votre-repo/tetris-game.git
+- Cloner le dépôt :
+
+git clone  https://github.com/BigProgramme/tetris-game
